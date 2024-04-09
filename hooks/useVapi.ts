@@ -92,7 +92,7 @@ export function useVapi() {
 
   const start = async () => {
     setCallStatus(CALL_STATUS.LOADING);
-    const response = vapi.start(assistant);
+    const response = vapi.start("16a70636-f3c4-404b-98c2-096ff9d2901e");
 
     response.then((res) => {
       console.log("call", res);
